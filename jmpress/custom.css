@@ -1,0 +1,30 @@
+#simple{
+		float: left;
+}
+#home{
+     	background-color: #C1E6E5;
+    	background-color: rgba(193, 230, 229, 1);
+    	max-width: 1400px;
+    	min-width: 1300px;
+    	max-height: 660px;
+    	position: relative;
+    	left:-33px;
+     }
+#aboutus{
+     	background-color: #E3D8FF;
+    	background-color: rgba(227, 216, 268, 1);
+        max-width: 1400px;
+    	min-width: 1300px;
+    	max-height: 660px;
+    	position: relative;
+    	left:-33px;
+}
+#contact_us{
+     	background-color: #DFEBB1;
+    	background-color: rgba(223, 235, 177, 1);
+    	max-width: 1400px;
+    	min-width: 1300px;
+    	max-height: 660px;
+    	position: relative;
+    	left:-33px;
+}	
