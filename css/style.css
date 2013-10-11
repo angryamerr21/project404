@@ -1,3 +1,39 @@
+
 body
 {
+	width:100%;
+	height: 100%;
+}
+
+
+#section_sidebar
+{
+	width:30%;
+	height:100%;
+	background-color: blue;
+	float: left;
+	clear: both;
+}
+
+#section_menu
+{
+	width:10%;
+	height:100%;
+	background-color: orange;
+	float: right;
+}
+
+#section_main img
+{
+	width:600px;
+	height: 280px;
+}
+
+#section_main
+{
+	width:60%;
+
+	height: 100%;
+	background-color: green;
+	float: right;
 }
