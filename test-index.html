@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
+            }
+            .center{
+                position:fixed;
+                top: 50%;
+                left: 50%;
+                width:30em;
+                height:18em;
+                margin-top: -9em; /*set to a negative number 1/2 of your height*/
+                margin-left: -15em
+            }
+            img{
+                height:auto;
+                width:auto;
+                position:relative;
+                
+            }
+            #red{
+             background: -webkit-linear-gradient(top, #110005, #320430 100%);   
+            }
+            #second{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;$
+    background:red;
+    text-align:center;
+    font-size:40px;
+    color:white;
+}
+ 
+            
+#bg1, #bg2, #bg3 {
+	z-index:50;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(images/bubbles.png) repeat 0 0;
+}
+
+#bg2 {
+	z-index:49;
+	background-image:url(images/bubbles2.png);
+}
+
+#bg3 {
+	z-index:48;
+	background-image:url(images/bubbles3.png);
+}
+            .resize{
+                height:300px;
+                width:500px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+        -->
+        <div data-100-start="display:block;" class="center" data-200-start="display:none;">
+            <img src="img/1.png" class="resize">
+        </div>
+        <div data-start="display:none;" data-200-start="display:block;" class="center" data-400-start="display:none;">
+            <img src="img/2.png" class="resize">
+        </div>
+        <div data-start="display:none;" data-400-start="display:block;" class="center" data-600-start="display:none;">
+            <img src="img/3.png" class="resize">
+        </div>
+        <div data-start="display:none;" data-600-start="display:block;" class="center" data-800-start="display:none;">
+            <img src="img/4.png" class="resize">
+        </div>
+        <div data-start="display:none;" data-800-start="display:block;" class="center" data-1000-start="display:none;">
+            <img src="img/5.png" class="resize">
+        </div>
+        
+        <div data-start="display:none;" data-1000-start="display:block;" class="center" data-1200-start="display:none;" data-1400-start="">
+            <img src="img/5.png" class="resize">
+        </div>
+       
+
+
+
+        
+        <script src="js/libs/jquery.js"></script>
+        <script src="js/libs/skrollr.js"></script>
+        <script type="text/javascript">
+            skrollr.init({
+    forceHeight: true,
+    smoothScrolling:true
+});
+        </script>
+    </body>
+</html>
